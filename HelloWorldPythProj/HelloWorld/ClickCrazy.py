@@ -11,7 +11,7 @@ from subprocess import call
 mod = GraphicsHelper.GetGraphicsModule()
 
 windSize = 700
-objSize = 50
+objSize = 10
 objs = list()
 speed = 2
 score = 0
@@ -96,6 +96,15 @@ def UndrawAll():
 
 def validSpeed():
     return speed >= minSleep 
+
+def setHard():
+    objSize = 10
+            
+def setMed():
+     objSize = 20
+
+def setEasy():
+     objSize = 30
 
 startGame()
 
